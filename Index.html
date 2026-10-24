@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos Rueda libre el boki</title>
+
+</head>
+
+<body>
+
+    <header>
+ <br><br>
+
+    <img src="Imagenes/imagenes4.jpeg" alt="imagenes4">
+    </section>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="tarifas.html">Tarifas y recorridos</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+    <h1>Reserva tu bicicleta</h1>
+    <a href="mailto: hola@ruedalibre.example" target="_blank">Contactanos</a>
+    <h3>Horarios de atencion</h3>
+    <dl>
+
+        <dt>Lunes a sabado</dt>
+        <dd>07:00 am  → 19:00 pm</dd>
+
+        <dt>Domingos y festivos</dt>
+        <dd>08: 30 am → 14:00 pm</dd>
+
+    </dl>
+
+    <div id="formulario-reserva">
+
+        <form action="post">
+
+            <h3>Tus datos</h3>
+
+            <label for="nombre">Nombre y apellido de usuario</label>
+            <br>
+            <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre" required minlength="3" title="Ingrese minimo 3 caracteres">
+            <br><br>
+            <label for="documento">Numero de documento</label>
+            <br>
+            <input id="documento" name="documento" type="text" placeholder="Ingrese su documento" required minlength="6" maxlength="10" title="su documento debe tener entre 6 y 10 caracteres">
+            <br><br>
+            <label for="correo">Correo electronico</label>
+            <br>
+            <input id="correo" name="correo" type="email" placeholder="Ingrese su correo" required title="este campo es obligatorio">
+            <br><br>
+            <label for="numero">Numero de contacto</label>
+            <br>
+            <input type = "tel" id="telefono" name="telefono" pattern="3[0-9]{9}">
+              
+            <br>
+            <h3>Tu alquiler</h3>
+            <br>
+            <label for="fecha">Fecha del alquiler</label>
+            <br>
+            <input id="fecha" name="fecha" type="date" min="2026-11-01" max="2026-12-30" required title="solo se aceptan reservas entre el 1/11/26 y el 30/12/26">
+            <br><br>
+            <label for="tipo-bicicleta">Tipo de bicicleta</label>
+            <br>
+            <select name="tipo-bicicleta" id="tipo-bicicleta" required title="este campo es obligatorio">
+
+                <option value="1">Croos</option>
+                <option value="2">Ciclismo</option>
+                <option value="3">Niños(as)</option>
+
+            </select>
+            <br><br>
+            <label for="tipo-plan">Tipo de plan</label>
+            <br>
+            <select name="tipo-plan" id="tipo-plan" required title="este campo es obligatorio">
+
+                <option value="1">1 hora</option>
+                <option value="2">Medio tiempo</option>
+                <option value="3">Sin tiempo</option>
+
+            </select>
+            <br><br>
+            <label for="cantidad-bicicletas">Cantidad de bicicletas solicitadas</label>
+            <br>
+            <input id="cantidad-bicicletas" name="cantidad-bicicletas" type="number" placeholder="Cuantas bicicletas llevara" required min="1" max="6" title="solo puedes reservar entre 1 y 6 bicicletas">
+            <br><br>
+            <label for="tipo-recorrido">Tipo de recorrido</label>
+            <br>
+            <select name="tipo-recorrido" id="tipo-recorrido">
+
+                <option value="1">ninguno</option>
+                <option value="2">Rio y parques</option>
+                <option value="3">Sabores de barrio</option>
+                <option value="4">Reto las palmas</option>
+
+            </select>
+            <br>
+            <h3>Confirmacion</h3>
+            <br>
+            <label for="comentario">Comentarios</label>
+            <br>
+            <textarea name="comentario" id="comentario" placeholder="Ingrese informacion adicional" maxlength="300" title="este campo tiene un maximo de 300 caracteres"></textarea>
+            <br><br>
+            <label for="terminos">
+                <input type="checkbox" name="terminos" id="terminos" required title="este campo es obligatorio">
+                Acepto los terminos de alquiler
+            </label>
+            <br><br>
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </div>
+
+    </main>
+
+    <footer>
+            Rueda libre
+            <a href="mailto: hola@ruedalibre.example" target="_blank">hola@ruedalibrelboki.example</a>
+            23/10/2026
+    </footer>
+</body>
+</html>
